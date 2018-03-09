@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="simpleProfile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="vv5-sU-Jrf">
+                                <rect key="frame" x="20" y="50" width="374" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="xsY-aC-0eW"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="56a-qq-lrc">
+                                <rect key="frame" x="0.0" y="213" width="414" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmA-DP-w6g">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="30"/>
+                                        <color key="backgroundColor" red="0.036738891035228649" green="0.89740134184161857" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Save"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u56-Ci-73U">
+                                        <rect key="frame" x="138" y="0.0" width="138" height="30"/>
+                                        <color key="backgroundColor" red="0.056950948469990381" green="1" blue="0.025694602952122558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Edit"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRJ-tx-hLY">
+                                        <rect key="frame" x="276" y="0.0" width="138" height="30"/>
+                                        <color key="backgroundColor" red="0.93520887964855115" green="1" blue="0.043099115994350012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Delete"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80750809139178148" green="1" blue="0.88349729318635484" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cy9-h9-cWZ">
+                                <rect key="frame" x="20" y="676" width="374" height="30"/>
+                                <state key="normal" title="YOLO"/>
+                                <connections>
+                                    <action selector="YOLO:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gKQ-SJ-o5z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WOk-7h-Gyh">
+                                <rect key="frame" x="30" y="291" width="354" height="20.333333333333314"/>
+                                <color key="backgroundColor" name="SEA FOAM GREEN"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="AWESOME"/>
+                        <constraints>
+                            <constraint firstItem="vv5-sU-Jrf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7Yi-8k-Tpb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cy9-h9-cWZ" secondAttribute="trailing" constant="20" id="89U-aR-vSY"/>
+                            <constraint firstItem="WOk-7h-Gyh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="DBR-Vv-PPy"/>
+                            <constraint firstItem="56a-qq-lrc" firstAttribute="top" secondItem="vv5-sU-Jrf" secondAttribute="bottom" constant="35" id="EqK-Yf-eAF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WOk-7h-Gyh" secondAttribute="trailing" constant="30" id="QhV-Vx-qOO"/>
+                            <constraint firstItem="WOk-7h-Gyh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UgJ-xF-uVR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="56a-qq-lrc" secondAttribute="trailing" id="cft-V1-Pm0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vv5-sU-Jrf" secondAttribute="trailing" constant="20" id="dCb-72-00x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cy9-h9-cWZ" secondAttribute="bottom" constant="30" id="lVe-1k-TEV"/>
+                            <constraint firstItem="Cy9-h9-cWZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="npQ-1Y-Cit"/>
+                            <constraint firstItem="vv5-sU-Jrf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="qlC-m8-bJn"/>
+                            <constraint firstItem="WOk-7h-Gyh" firstAttribute="top" secondItem="56a-qq-lrc" secondAttribute="bottom" constant="48" id="tC7-nJ-g0r"/>
+                            <constraint firstItem="56a-qq-lrc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wye-7W-kUy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="deleteBoton" destination="WRJ-tx-hLY" id="vKn-FG-gzT"/>
+                        <outlet property="editBoton" destination="u56-Ci-73U" id="E7x-0m-N7s"/>
+                        <outlet property="labelText" destination="WOk-7h-Gyh" id="UJF-Bd-cUx"/>
+                        <outlet property="saveButon" destination="OmA-DP-w6g" id="7Ij-7z-EfI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="31.793478260869566"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="400" height="294"/>
+        <namedColor name="AWESOME">
+            <color red="1" green="0.086274509803921567" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SEA FOAM GREEN">
+            <color red="0.69803921568627447" green="0.85882352941176465" blue="0.74901960784313726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

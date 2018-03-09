@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="simpleProfile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="vv5-sU-Jrf">
+                                <rect key="frame" x="20" y="20" width="335" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="xsY-aC-0eW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mac" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBp-Wl-p8G">
+                                <rect key="frame" x="117" y="168" width="143" height="28"/>
+                                <color key="backgroundColor" red="0.67875711683142592" green="0.82259934828431813" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="56a-qq-lrc">
+                                <rect key="frame" x="0.0" y="215" width="375" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmA-DP-w6g">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="30"/>
+                                        <color key="backgroundColor" red="0.62245267605063492" green="0.91833083274946992" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Save"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u56-Ci-73U">
+                                        <rect key="frame" x="125" y="0.0" width="125" height="30"/>
+                                        <color key="backgroundColor" red="0.85407593032010565" green="1" blue="0.65642146008534286" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Edit"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRJ-tx-hLY">
+                                        <rect key="frame" x="250" y="0.0" width="125" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.84718312838212562" blue="0.71068566561926461" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Delete"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80750809139178148" green="1" blue="0.88349729318635484" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cy9-h9-cWZ">
+                                <rect key="frame" x="20" y="607" width="335" height="30"/>
+                                <state key="normal" title="YOLO"/>
+                                <connections>
+                                    <action selector="YOLO:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gKQ-SJ-o5z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75881836109264023" green="1" blue="0.66759836722589072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="WBp-Wl-p8G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="21m-8j-Jxw"/>
+                            <constraint firstItem="vv5-sU-Jrf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="7Yi-8k-Tpb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Cy9-h9-cWZ" secondAttribute="trailing" constant="20" id="89U-aR-vSY"/>
+                            <constraint firstItem="vv5-sU-Jrf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Mgq-7m-LQJ"/>
+                            <constraint firstItem="56a-qq-lrc" firstAttribute="top" secondItem="WBp-Wl-p8G" secondAttribute="bottom" constant="19.5" id="P7L-ha-1Nv"/>
+                            <constraint firstItem="WBp-Wl-p8G" firstAttribute="top" secondItem="vv5-sU-Jrf" secondAttribute="bottom" constant="20" id="Wca-JZ-epT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="56a-qq-lrc" secondAttribute="trailing" id="cft-V1-Pm0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vv5-sU-Jrf" secondAttribute="trailing" constant="20" id="dCb-72-00x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Cy9-h9-cWZ" secondAttribute="bottom" constant="30" id="lVe-1k-TEV"/>
+                            <constraint firstItem="Cy9-h9-cWZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="npQ-1Y-Cit"/>
+                            <constraint firstItem="56a-qq-lrc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wye-7W-kUy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="botonsito" destination="OmA-DP-w6g" id="0Hf-5C-eho"/>
+                        <outlet property="macLabel" destination="WBp-Wl-p8G" id="Rx8-6H-pzW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="310" height="250"/>
+    </resources>
+</document>
