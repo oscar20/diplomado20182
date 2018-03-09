@@ -1,5 +1,3 @@
-# diplomado20182
+﻿## Nuevo Readme
 
-Se creó repositorio 10/02/2018
-
-Modificando...
+--Agregango comentarios....
